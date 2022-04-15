@@ -2,8 +2,13 @@
   --color-primary: #fdfff6;
   --text-color: #70614c;
   --text-color-light: #bba381;
-  --button-background: #63a651;
+  --text-color-dark: hsl(33, 23%, 17%);
+  --button-background: #28ac03;
   --font-primary: 1.25rem;
+  --font-normal: 1rem;
+  --font-tiny: 0.8rem;
+  --font-big: 1.5rem;
+  --font-large: 3.8rem;
 }
 
 * {
@@ -31,7 +36,7 @@ a {
   color: var(--text-color);
 }
 
-.logo {
+.image {
   width: 100%;
   object-fit: cover;
 }
@@ -75,4 +80,40 @@ a {
   color: var(--text-color-light);
   border-bottom: 1px solid black;
   padding-bottom: 0.125em;
+}
+
+.body-main {
+  background-image: url(img/Background.png);
+  height: calc(100vh - 70px); /*70px is the height of the navigation*/
+  /* height: 700px also looks good */
+
+  background-size: cover;
+  background-position: center;
+
+  /* This also looks good without any additional property needed. optionally add background-size: cover which isn't okay on large screens
+  height: 589px; */
+}
+
+.main-message-heading {
+  font-size: var(--font-large);
+  padding-top: 3.7rem;
+}
+
+.main-message-paragraph {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.main-message-button {
+  margin-top: 2rem;
+  background-color: var(--button-background);
+  color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  outline: none;
+  border-color: transparent;
+  width: 5.5rem;
+  text-transform: uppercase;
 }
