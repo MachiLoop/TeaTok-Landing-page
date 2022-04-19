@@ -2,12 +2,13 @@
   --color-primary: #fdfff6;
   --text-color: #70614c;
   --text-color-light: #bba381;
+  --text-color-light: hsl(35, 10%, 45%);
   --text-color-dark: hsl(33, 23%, 17%);
   --button-background: #28ac03;
   --font-primary: 1.25rem;
   --font-normal: 1rem;
   --font-tiny: 0.8rem;
-  --font-big: 1.5rem;
+  --font-big: 1.8rem;
   --font-large: 3.8rem;
 }
 
@@ -116,4 +117,79 @@ a {
   border-color: transparent;
   width: 5.5rem;
   text-transform: uppercase;
+}
+
+.main-message-button:hover {
+  transform: scale(1.05);
+}
+
+/* BODY SECTION */
+.body-section {
+  margin-top: 60px;
+}
+
+.section-article {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-article h2 {
+  font-size: var(--font-big);
+  margin-bottom: 1rem;
+}
+
+.section-article p {
+  font-size: var(--font-tiny);
+  font-weight: bolder;
+  color: var(--text-color-light);
+  width: 60%;
+  margin: 0px auto;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin-bottom: 100px;
+}
+
+.product-list {
+  display: grid;
+}
+
+.per-product {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  text-align: right;
+}
+
+.per-product-image {
+  width: 70px;
+}
+.per-product-image img {
+  max-width: 100%;
+}
+
+.per-product-info h3 {
+  margin-bottom: 0.5rem;
+}
+.per-product-info p {
+  font-size: var(--font-tiny);
+  width: 78%;
+  /* or font normal with a width of 85% */
+  float: right;
+  /* font-weight: bolder; */
+}
+
+/* MIDDLE SECTION */
+
+.product-big {
+  display: grid;
+  align-items: center;
+}
+
+.product-big-image img {
+  width: 100%;
+  object-fit: cover;
 }
