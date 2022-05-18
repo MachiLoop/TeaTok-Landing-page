@@ -69,6 +69,29 @@ a {
   color: var(--text-color-light);
 }
 
+@media (max-width: 676px) {
+  .aside-brand p,
+  .nav-list-item a {
+    font-size: 0.82rem;
+  }
+}
+@media (max-width: 576px) {
+  .header-wrapper {
+    flex-direction: column;
+    height: 100px;
+  }
+  .aside-brand {
+    margin-top: 12px;
+    border: 2px solid var(--button-background);
+    padding: 4px;
+    border-radius: 10px;
+  }
+  .aside-brand p {
+    font-weight: bolder;
+    font-size: var(--font-primary);
+  }
+}
+
 .nav-list {
   list-style-type: none;
   flex-wrap: wrap;
@@ -76,6 +99,25 @@ a {
 
 .nav-list-item {
   margin-left: 1.75em;
+}
+
+@media (max-width: 576px) {
+  .nav-list-item {
+    margin: 0.875em;
+  }
+}
+@media (max-width: 364px) {
+  .nav-list {
+    flex-direction: column;
+  }
+  .nav-list-item {
+    margin: 8px 0px;
+  }
+  .header-wrapper {
+    flex-direction: column;
+    height: 220px;
+    justify-content: flex-start;
+  }
 }
 
 .nav-list-item a:hover {
@@ -110,6 +152,37 @@ a {
   padding-top: 3.7rem;
 }
 
+@media (max-width: 1100px) {
+  .main-message-heading {
+    font-size: 3.2rem;
+  }
+}
+@media (max-width: 900px) {
+  .main-message-heading {
+    font-size: 2.7rem;
+  }
+}
+@media (max-width: 676px) {
+  .main-message-heading {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 576px) {
+  .main-message-heading {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 496px) {
+  .main-message-heading {
+    font-size: 1.75rem;
+  }
+}
+@media (max-width: 365px) {
+  .main-message-heading {
+    font-size: 1.6rem;
+  }
+}
+
 .main-message-paragraph {
   color: var(--text-color);
   font-size: 14px;
@@ -117,8 +190,31 @@ a {
   margin-top: 2rem;
 }
 
+@media (max-width: 900px) {
+  .main-message-paragraph {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 676px) {
+  .main-message-paragraph {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 496px) {
+  .main-message-paragraph {
+    font-size: 9px;
+  }
+}
+@media (max-width: 375px) {
+  .main-message-paragraph {
+    font-size: 8px;
+  }
+}
+
 .main-message-button {
-  margin-top: 2rem;
+  margin-top: 0.8rem;
   background-color: var(--button-background);
   color: #ffffff;
   padding: 0.5rem;
@@ -148,6 +244,17 @@ a {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 656px) {
+  .section-article h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 396px) {
+  .section-article h2 {
+    font-size: 1.2rem;
+  }
+}
+
 .section-article p {
   font-size: var(--font-tiny);
   font-weight: bolder;
@@ -155,12 +262,51 @@ a {
   width: 60%;
   margin: 0px auto;
 }
+@media (max-width: 1034px) {
+  .section-article p {
+    width: 70%;
+  }
+}
+@media (max-width: 900px) {
+  .section-article p {
+    width: 85%;
+  }
+}
+@media (max-width: 736px) {
+  .section-article p {
+    width: 95%;
+  }
+}
+@media (max-width: 656px) {
+  .section-article p {
+    font-size: 0.65rem;
+  }
+}
+@media (max-width: 518px) {
+  .section-article p {
+    width: 99%;
+    font-size: 0.5rem;
+  }
+}
+/* @media (max-width: 656px) {
+  .section-article p {
+    font-size: 0.65rem;
+  }
+} */
 
 .main-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   margin-bottom: 100px;
+}
+
+@media (max-width: 811px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    row-gap: 80px;
+    justify-items: start;
+  }
 }
 
 .product-list {
@@ -172,6 +318,25 @@ a {
   grid-template-columns: 2fr 1fr;
   align-items: center;
   text-align: right;
+}
+
+@media (max-width: 811px) {
+  .product-list {
+    width: 100%;
+    row-gap: 24px;
+  }
+}
+
+@media (max-width: 356px) {
+  .product-list {
+    row-gap: 32px;
+  }
+}
+
+.per-product {
+  grid-template-columns: 2fr 1fr;
+  /* align-items: center; */
+  /* text-align: start; */
 }
 
 .per-product-image {
@@ -192,14 +357,34 @@ a {
   /* font-weight: bolder; */
 }
 
+@media (max-width: 406px) {
+  .per-product-info p {
+    font-size: 0.7rem;
+  }
+}
+
 .product-big {
   display: grid;
   align-items: center;
 }
 
+@media (max-width: 811px) {
+  .product-big {
+    width: 100%;
+  }
+}
+
+/*FIXME wrong class name*/
 .product-big-image img {
   width: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 811px) {
+  .product-big img {
+    width: 100%;
+    margin: 0px auto;
+  }
 }
 
 /* BOTTOM SECTION */
