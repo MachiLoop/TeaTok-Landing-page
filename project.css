@@ -410,10 +410,36 @@ a {
   line-height: 24px;
 }
 
+@media (max-width: 490px) {
+  .bottom-section-wrapper p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
 .bottom-section-wrapper .warning {
   margin-top: 1.5em;
   font-weight: bolder;
   color: var(--text-color-light);
+}
+
+@media (max-width: 655px) {
+  .bottom-section-wrapper .warning {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .bottom-section-wrapper p,
+  .bottom-section-wrapper .warning {
+    font-size: var(--font-tiny);
+  }
+}
+@media (max-width: 369px) {
+  .bottom-section-wrapper .warning {
+    font-size: 0.65rem;
+  }
 }
 
 .bottom-section-wrapper .warning-2 {
